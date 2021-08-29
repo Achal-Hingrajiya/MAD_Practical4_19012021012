@@ -4,11 +4,13 @@ import android.content.Intent
 import android.content.Intent.ACTION_DIAL
 import android.net.Uri
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.provider.ContactsContract
 import android.provider.MediaStore
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val viewCallLogButton = findViewById<Button>(R.id.btn_view_call_log)
         val openGalleryButton = findViewById<Button>(R.id.btn_open_gallery)
         val openCameraButton = findViewById<Button>(R.id.btn_open_camera)
+        val setAlarmButton = findViewById<Button>(R.id.btn_set_alarm)
 
 
 // Make a call to Mobile No. (typed in Textbox above the button) when user clicks "MAKE A CALL" BUTTON
@@ -82,6 +85,15 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+
+
+// Set an alarm when user clicks "SET ALARM" BUTTON
+
+        setAlarmButton.setOnClickListener {
+            val i = Intent(AlarmClock.ACTION_SET_ALARM)
+            startActivity(i)
+        }
+
     }
 
 

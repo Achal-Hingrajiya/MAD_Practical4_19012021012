@@ -14,15 +14,15 @@
         android:layout_height="wrap_content"
         android:hint="@string/txt_mobile_url_hint"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="20sp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtInput_mobile_url"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20sp"
-            android:layout_marginTop="30sp"
-            android:layout_marginRight="20sp" />
+            android:layout_height="wrap_content" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -94,5 +94,17 @@
         android:text="@string/btn_open_camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_pick_contact" />
+
+
+    <Button
+        android:id="@+id/btn_set_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:text="@string/btn_set_alarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mobile_url" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
