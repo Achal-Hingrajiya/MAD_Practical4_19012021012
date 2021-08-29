@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Practical4_19012021012</string>
-    <string name="btn_call">Call</string>
+    <string name="btn_call">Make A Call</string>
     <string name="btn_url">View Page</string>
     <string name="txt_mobile_url_hint">Mobile No./ URL</string>
     <string name="txt_pick_contact_hint">Pick a contact</string>
     <string name="btn_pick_contact">Pick a contact</string>
     <string name="btn_view_call_log">View a call log</string>
+    <string name="btn_open_gallery">Open a Gallery</string>
 </resources>

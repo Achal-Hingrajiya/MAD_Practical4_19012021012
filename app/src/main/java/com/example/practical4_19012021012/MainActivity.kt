@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val textMobileUrlInput = findViewById<TextInputEditText>(R.id.txtInput_mobile_url)
         val pickContactButton = findViewById<Button>(R.id.btn_pick_contact)
         val viewCallLogButton = findViewById<Button>(R.id.btn_view_call_log)
+        val openGalleryButton = findViewById<Button>(R.id.btn_open_gallery)
 
 
 
@@ -54,6 +55,14 @@ class MainActivity : AppCompatActivity() {
         viewCallLogButton.setOnClickListener {
             Intent(Intent.ACTION_VIEW, Uri.parse("content://call_log/calls")).apply { startActivity(this) }
 
+        }
+
+        openGalleryButton.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_GET_CONTENT
+            intent.type = "image/*"
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
         }
     }
 
