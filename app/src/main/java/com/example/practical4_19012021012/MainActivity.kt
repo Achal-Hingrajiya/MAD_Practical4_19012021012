@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val pickContactButton = findViewById<Button>(R.id.btn_pick_contact)
         val viewCallLogButton = findViewById<Button>(R.id.btn_view_call_log)
         val openGalleryButton = findViewById<Button>(R.id.btn_open_gallery)
-
+//        val openCameraButton = find
 
 
         callingBtn.setOnClickListener {
@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(this)
             }
         }
+
 
         viewPageBtn.setOnClickListener {
 
