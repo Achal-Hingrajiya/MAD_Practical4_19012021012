@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
-    }
+    }// fun onCreate
 
 
-}
+}// calss MainActivity
